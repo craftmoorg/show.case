@@ -1,0 +1,171 @@
+.booklet{}
+.booklet__container{
+    display: flex;
+    flex-direction: row;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 90, 170, 0.22);
+    border-radius: 6px;
+    overflow: hidden;
+    margin-top: 56px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 120px;
+}
+.booklet__column-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 48%;
+    overflow: hidden;
+    padding: 32px 0;
+    margin-right: 70px;
+}
+.booklet__img-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 774px;
+    overflow: hidden;
+}
+.booklet__img-container img{
+    margin: 0 4px;
+    width: 256px;
+    height: 210px;
+    object-fit: cover;
+}
+.booklet__column-2{
+    display: flex;
+    flex-direction: column;
+    width: 52%;
+    padding: 32px 80px 32px 0;
+}
+.booklet__text{
+    border-bottom: 1px solid #ABCAE9;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+}
+.booklet__text p{
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    color: #828282;
+}
+.booklet__text p:last-child{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.booklet__btns-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.booklet__btn-catalog,
+.booklet__btn-booklet{
+    padding: 16px 0;
+    border: 1px solid #005AAA;
+    border-radius: 8px;
+    font-family: 'Myriad%20Pro', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    height: 54px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.booklet__btn-catalog div,
+.booklet__btn-booklet div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.booklet__btn-catalog{
+    max-width: 280px;
+    color: #ffffff;
+    background: #005AAA;
+    margin-right: 20px;
+}
+.booklet__btn-catalog:hover{
+    background: #ffffff;
+    color: #005AAA;
+}
+.booklet__btn-catalog svg{
+    transition: 300ms ease;
+}
+.booklet__btn-catalog:hover svg path{
+    transition: 300ms ease;
+    fill: #005AAA;
+}
+.booklet__btn-catalog span{
+    margin-right: 13px;
+}
+.booklet__btn-booklet{
+    max-width: 280px;
+    color: #005AAA;
+    background: #ffffff;
+    text-align: center;
+}
+.booklet__btn-booklet svg{
+    transition: 300ms ease;
+}
+.booklet__btn-booklet:hover svg path{
+    transition: 300ms ease;
+    fill: #ffffff;
+}
+.booklet__btn-booklet:hover{
+    background: #005AAA;
+    color: #ffffff;
+}
+.booklet__btn-booklet span{
+    margin-left: 13px;
+}
+
+@media screen and (max-width: 1240px) {
+    .booklet__btns-container{
+        flex-direction: column;
+    }
+    .booklet__btn-catalog{
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    .booklet__btn-booklet{
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 880px) {
+    .booklet__container{
+        flex-direction: column;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .booklet__column-1{
+        order: 2;
+        width: 100%;
+        padding: 0;
+    }
+    .booklet__column-2{
+        order: 1;
+        padding: 20px 15px 30px 15px;
+        width: 100%;
+    }
+    .booklet__btns-container{
+        flex-direction: column;
+    }
+    .booklet__btn-catalog{
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .booklet__btn-booklet{
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 485px) {
+    .booklet__container{
+        margin-bottom: 60px;
+    }
+}
+

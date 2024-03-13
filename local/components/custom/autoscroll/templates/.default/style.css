@@ -1,0 +1,43 @@
+#toTop {
+  position: fixed;
+  display: inline-block;
+  bottom: 30px;
+  right: -40px;
+  width: 40px;
+  height: 40px;
+  z-index: 1000;
+  cursor: pointer;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 20px;
+  background: #013f7a;
+  box-shadow: 0 0 0 3px #ffffff70;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s ease-in-out;
+}
+#toTop:hover {
+  background: #ffffff;
+  box-shadow: 0 0 0 3px #013f7a8c;
+
+}
+
+#toTop svg {
+  position: relative;
+  top: 7px;
+  right: -1px;
+  fill: #ffffff;
+  transition: all .3s ease-in-out;
+}
+
+#toTop:hover svg {
+  cursor: pointer;
+  fill: #013f7a;
+  transition: all .3s ease-in-out;
+}
+
+#toTop.show {
+  opacity: 1;
+  visibility: visible;
+  right: calc(2%);
+}
